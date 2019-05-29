@@ -16,7 +16,11 @@ class ArtistsController < ApplicationController
 	end
 
   def create
+<<<<<<< HEAD
     @artist = Artist.new(artist_params(:name, :bio))
+=======
+    @artist = Artist.new(artist _params(:name, :bio))
+>>>>>>> 349835ac56334b381ad4982c2d650205f564d1c4
     @artist.save
     redirect_to artist_path(@artist)
   end
